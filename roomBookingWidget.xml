@@ -1,0 +1,79 @@
+<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel-1</PanelId>
+    <Type>InCall</Type>
+    <Icon>Microphone</Icon>
+    <Order>1</Order>
+    <Name>Remote Mute</Name>
+    <Page>
+      <Name>Remote Call Options</Name>
+      <Row>
+        <Name>Remote Call Mute</Name>
+        <Widget>
+          <WidgetId>widget_remote_mute</WidgetId>
+          <Name>Remote Mute</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=1</Options>
+    </Page>
+  </Panel>
+  <Panel>
+    <PanelId>roomBooking</PanelId>
+    <Type>Statusbar</Type>
+    <Icon>Helpdesk</Icon>
+    <Order>2</Order>
+    <Color>#FF7033</Color>
+    <Name>Room Booking Assistant</Name>
+    <Page>
+      <Name> Room Booking Assistant</Name>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>bookingText</WidgetId>
+          <Name>How long would you like to book for?</Name>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Time</Name>
+        <Widget>
+          <WidgetId>bookingTime</WidgetId>
+          <Type>GroupButton</Type>
+          <Options>size=4;columns=4</Options>
+          <ValueSpace>
+            <Value>
+              <Key>1</Key>
+              <Name>15mins</Name>
+            </Value>
+            <Value>
+              <Key>2</Key>
+              <Name>30mins</Name>
+            </Value>
+            <Value>
+              <Key>3</Key>
+              <Name>45mins</Name>
+            </Value>
+            <Value>
+              <Key>4</Key>
+              <Name>60mins</Name>
+            </Value>
+          </ValueSpace>
+        </Widget>
+      </Row>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>bookingConfirm</WidgetId>
+          <Name>Boom room</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=1</Options>
+    </Page>
+  </Panel>
+</Extensions>
